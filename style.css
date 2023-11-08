@@ -25,7 +25,22 @@ p{
 a, .btn {
   transition-property: all 300ms ease;
 }
+.displayed{
+  animation: fadeUp 1s forwards;
+}
+@keyframes fadeUp{
+  0%{opacity:0; transform: translateY(0);}
+100%{opacity:1; transform: translateY(-100px);}
+}
 
+.box{
+  width:100px;
+  height: 100px;
+  background-color: red;
+  text-align: center;
+  line-height: 100px;
+  margin:0 auto;
+}
 /* nav */
 
 nav,
@@ -33,28 +48,62 @@ nav,
 display: flex;
 }
 nav{
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  height:10vh;
+  height: 10vh;
+  margin: 0 2rem;
 }
+
 .nav-links{
+  justify-content: end;
+  width:100%;
   gap:2rem;
   list-style: none;
   font-size: 0.8rem;
 }
+
+
 a{
   color:rgb(32, 32, 32);
   text-decoration: none;
 }
-a:hover{
-color:rgb(115, 115, 115);
-text-decoration: underline;
-text-underline-offset: 1.2rem;
+.logo img{
+  width:40px;
+  height:40px;
 }
-
 .logo:hover{
   cursor: default;
 }
+
+/* nav line */
+
+.nav-links li a{
+position: relative;
+}
+
+.nav-links li.current a,
+.nav-links li a:hover{
+  color:#5E9B9C;
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  top:20px;
+  left: -10%;
+  width: 120%;
+  height: 1px;
+  background:#5E9B9C;
+  transition: all .4s;
+  transform: scale(0, 1);
+  transform-origin: center top;
+}
+
+.nav-links li.current a::after,
+.nav-links li a:hover::after {
+  transform: scale(1, 1);
+}
+
 
 /* hamburger */
 #hamburger-nav{
@@ -68,7 +117,7 @@ text-underline-offset: 1.2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height:24px;
+  height:23px;
   width:30px;
   cursor: pointer;
 }
@@ -80,26 +129,54 @@ text-underline-offset: 1.2rem;
 }
 .menu-links{
   position: absolute;
-  top:150%;
+  top:100%;
   right: 0;
-  background-color: white;
+  background-color: #fff;
   width:fit-content;
   max-height:0;
   overflow: hidden;
   transition:  all 0.3s ease-in-out;
+z-index: 100;
 }
-.menu-links a{
+ .menu-links a{
   display: block;
   text-align: center;
   font-size: 1.5rem;
   color:rgb(32, 32, 32);
   text-decoration: none;
-  transition:all 0.3s ease-in-out;
 }
 .menu-links li{
   list-style: none;
 }
+
+.menu-links li a{
+  position: relative;
+  }
+
+  .menu-links li.current a,
+  .menu-links li a:hover{
+    opacity:0.5;
+  }
+
+  .menu-links li a::after {
+    content: '';
+    position: absolute;
+    top:36px;
+    left: 10%;
+    width: 80%;
+    height: 1px;
+    background:#bfbfbf;
+    transition: all .4s;
+    transform: scale(0, 1);
+    transform-origin: center top;
+  }
+
+  .menu-links li.current a::after,
+  .menu-links li a:hover::after {
+    transform: scale(1, 1);
+  }
 .menu-links.open{
+  width:15.4rem;
   max-height: 300px;
   padding: 80px 32px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -166,6 +243,7 @@ section {
   margin-top: 1rem;
 }
 .title{
+  font-weight: normal;
   font-size: 4rem;
   text-align: center;
   font-family: 'Abril Fatface', serif;
@@ -173,7 +251,7 @@ section {
 
 /* about */
 #about{
-  /* background-color: #EEEAE4; */
+height:80vh;
 }
 .about-container{
   display: flex;
@@ -185,12 +263,32 @@ section {
   width:400px;
   text-align: left;
 }
+/* skills */
+#skills{
+  background-color: #EEEAE4;
+  height:40vh;
+  margin: 2rem 0 0;
+}
+.skill-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap:3rem;
+  list-style: none;
+  height:10rem;
+  /* font-size:3rem; */
+}
+.skill-item img{
+  width:72px;
+}
 
 /* work */
 
-#project{
+#projects{
   position:relative;
-
+  height:auto;
+  margin-bottom:8rem;
 }
 .project-img{
   width:100%;
@@ -215,23 +313,20 @@ transition: 0.4s;
 .details-container a:hover{
   opacity:0.8;
 }
+
 /* contact */
 #contact{
+  background-color:#5E9B9C;
+  color:#ffffff;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  height:60vh;
+  height:40vh;
+  margin:0;
 }
 .contact-info-upper-container{
   display: flex;
   justify-content: center;
-  height:100px;
-  margin: 2rem auto;
-  padding:0.5rem;
-}
-.icon{
-  height:2.5rem;
-  margin:0 20px;
+  /* margin: 2rem auto; */
 }
 .contact-info-container{
   display: flex;
@@ -239,4 +334,8 @@ transition: 0.4s;
   justify-content: center;
   gap:0.5rem;
   margin:1rem;
+}
+.contact-info-container a{
+font-size: 2rem;
+color:#fff;
 }

@@ -2,10 +2,11 @@
   .text-container{
     width:auto;
 }
-.about-container{
-  gap: 0;
-  }
+#about{
+  height:130vh;
 }
+}
+
 @media screen and (max-width: 992px){
   .section_pic-container{
     display: flex;
@@ -27,9 +28,22 @@
   .details-container {
     width:33%;
   }
+  #skills{
+    padding:2rem 3rem 0;
+      height:60vh;
+      gap:2rem;
+    }
+}
   .project-title{
     margin :0.2rem;
   font-size: 0.8rem;
+}
+
+@media screen and (max-width: 928px){
+
+
+.skill-container{
+  padding-top:1rem;
 }
 }
 @media screen and (max-width: 768px){
@@ -59,15 +73,15 @@
   }
   section{
     margin:0;
-    padding-top:8vh;
-    height:120vh;
+    padding-top:14vh;
+    height:100vh;
   }
 
   .about-container{
     display: block;
   }
   .text-container{
-    padding:0 3rem;
+    padding:0 4rem;
     font-size: 1rem;
   }
   .details-container {
@@ -75,9 +89,17 @@
     margin:0 auto 2.4rem;
     text-align: center;
     }
-    .project-title {
-      margin: 0.4rem;
-      font-size: 1rem;
+    .skill-container{
+    gap:2rem;
+    height:8vh;
+    padding-top:2rem;
+}
+  .project-title {
+    margin: 0.4rem;
+    font-size: 1rem;
+  }
+  #contact{
+    padding:2rem;
   }
 }
 
@@ -93,12 +115,12 @@
   .experience-details-container{
     margin-top:2rem;
   }
-  section{
-    /* height:100vh; */
-  }
+section{
+  height:100vh;
+}
   .section_pic-container{
-    height:200px;
-    width:200px;
+    height:280px;
+    width:280px;
   }
   .section_text_p1{
     text-align: center;
@@ -112,5 +134,26 @@
     font-size: 3rem;
     text-align: center;
   }
+  #about{
+    height:130vh;
+}
+.skill-container{
+  gap:2rem;
+}
+}
+@media screen and (max-width: 500px){
 
+  #skills{
+    height:72vh;
+    padding:2rem 3rem 0;
+  }
+}@media screen and (max-width: 396px){
+
+  #skills{
+    height:94vh;
+    padding:2rem 4rem 0;
+  }
+  #about{
+    height:140vh;
+  }
 }
