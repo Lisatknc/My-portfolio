@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+    <title>Lisa Takenouchi</title>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><img src="./assets/my-logo.jpg" alt="logo"></div>
+      <ul class="nav-links">
+        <li><a href="#nav" class="current">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"><img src="./assets/my-logo.jpg" alt="logo"></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#work" onclick="toggleMenu()">Work</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="webdesign">
+      <div class="section_text jp">
+        <p class="section_text_p2 ">Toffy 電動ふわふわかき氷機　商品ページデザイン</p>
+        <p class="project-title">概要：ECサイトで使用する商品ページ<br>
+          制作期間：1週間<br>
+          使用ツール：デジタルカメラ（ニコン）、Photoshop, Xd, VScode<br>
+          使用言語：HTML,CSS<br>
+          </p>
+      </div>
+      <div class="section_design-container">
+        <img src="./assets/web-design/web-design_1-1.jpeg" alt="プロフィール写真">
+        <img src="./assets/web-design/web-design_1-2.jpeg" alt="プロフィール写真">
+      </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/774a66fb23.js" crossorigin="anonymous"></script>
+  </body>
+</html>
