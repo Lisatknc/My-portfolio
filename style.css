@@ -226,6 +226,7 @@ section {
   height:400px;
   width:400px;
   margin:auto 0;
+  position: relative;
 }
 .section_text{
   align-self: center;
@@ -425,4 +426,33 @@ tr{
 
 .btnarrow4:hover::after{
     left:0%;
+}
+
+/* circle animation */
+.keyvisual{
+  position: relative;
+}
+
+.keyvisual__scroll{
+  width: 160px;
+  position:absolute;
+  bottom:0vw;
+  left: -8vw;
+  opacity: 0.8;
+}
+
+.keyvisual__scroll--circle{
+  height: auto;
+  width: 100%;
+  animation: rotate 20s linear infinite;
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
