@@ -46,24 +46,36 @@ nav,
 display: flex;
 }
 nav{
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
   height: 10vh;
   margin: 0 2rem;
+  /* width:100%; */
 }
 
 .nav-links{
-  justify-content: end;
   width:100%;
   gap:2rem;
   list-style: none;
   font-size: 0.8rem;
-}
 
+}
+#desktop-nav{
+  position: fixed;
+  top:0;
+  right:0;
+  z-index: 999;
+}
 
 a{
   color:rgb(32, 32, 32);
   text-decoration: none;
+}
+.logo{
+  position: absolute;
+  left:20px;
+  top:20px;
+
 }
 .logo img{
   width:40px;
@@ -106,6 +118,10 @@ position: relative;
 /* hamburger */
 #hamburger-nav{
   display: none;
+  position: fixed;
+  right:0;
+  top:0;
+  z-index: 999;
 }
 .hamburger-menu{
   position: relative;
