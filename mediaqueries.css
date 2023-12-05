@@ -5,7 +5,9 @@
 #about{
   height:130vh;
 }
-
+.skill-container{
+  gap:2rem;
+}
 }
 
 @media screen and (max-width: 992px){
@@ -109,7 +111,7 @@
     text-align: center;
     }
     .skill-container{
-    gap:2rem;
+    gap:1.6rem;
     height:8vh;
     padding-top:2rem;
 }
@@ -168,7 +170,7 @@ section{
     height:130vh;
 }
 .skill-container{
-  gap:2rem;
+  gap:1.1rem;
 }
 th, td{
   display: block;
@@ -182,7 +184,7 @@ th, td{
 }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 527px){
 
   #skills{
     height:72vh;
@@ -191,18 +193,18 @@ th, td{
 }@media screen and (max-width: 396px){
 
   #skills{
-    height:94vh;
-    padding:2rem 4rem 0;
+    height:74vh;
+    padding:2rem 2rem 0;
   }
   #about{
     height:140vh;
   }
   .section_text_p3{
-font-size: 1.3rem;
+    font-size: 1.3rem;
 }
-.keyvisual__scroll{
-  width:80px;
-  left: -22vw;
+  .keyvisual__scroll{
+    width:80px;
+    left: -22vw;
 }
 
 }
