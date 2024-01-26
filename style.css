@@ -392,6 +392,16 @@ tr{
   margin-bottom:2rem;
 }
 
+/* ux design */
+
+.ux-pj img{
+  max-width: 100%;
+  height: auto;
+}
+
+.ux-pj{
+    padding-top: 10vh;
+}
 /* go back button */
 
 .backto-projects{
