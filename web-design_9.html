@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+    <title>Lisa Takenouchi</title>
+  </head>
+  <body>
+    <div class="logo"><img src="./assets/my-logo.jpg" alt="logo"></div>
+    <nav id="desktop-nav">
+      <ul class="nav-links">
+        <li><a href="index.html#nav" class="current">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#work" onclick="toggleMenu()">Work</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="webdesign">
+      <div class="section_text jp scroll-in">
+        <div class="section_text_p3"><p>SNSキャンペーンバナー</p>
+
+        </div>
+       <div class="description">
+        <table >
+          <tbody>
+            <tr>
+              <th>概要</th>
+              <td>架空のアニメ フォロー＆RT キャンペーンバナー</td>
+            </tr>
+
+            <tr>
+              <th>バナー概要</th>
+              <td>・架空のアニメ キャンペーンバナー<br>
+                ・キャンペーン第1弾<br>
+                ・参加方法：X公式アカウントのフォロー＆対象ツイートをRT<br>
+                ・抽選：5名様<br>
+                ・期間：期間5月10日〜6月10日<br>
+                ・サイズ：1200px × 630px<br>
+                ・キャラクターのイラストは以下のリンク先よりお借りしました。<br>
+                <a href="https://www.ac-illust.com/main/profile.php?id=DQO9yeUP&area=1">イラストAC様</a>
+              </td>
+            </tr>
+            <tr>
+              <th>デザイン</th>
+              <td>・キャンペーンを知らせると同時にキャラクターの雰囲気も伝わるようデザインを意識しました。
+                キャラクターと周りのあしらいは傾きをつけることで、動きがあり楽しい印象になるようにしました。<br>
+                ・キャラクターの衣装に合わせ、全体を青系でマリンテイストのデザインに統一しました。<br>
+                ・内容の把握がしやすいようにキャンペーン概要は左側にまとめ、
+                「5名様」「豪華商品」の文字を大きくし、キャンペーンの内容に目がいくようにしました。<br>
+
+              </td>
+            </tr>
+            <tr>
+              <th>制作期間</th>
+              <td>0.5日</td>
+            </tr>
+            <tr>
+              <th>使用ツール</th>
+              <td>Figma</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+      <div class="section_design-container scroll-in ux-pj">
+        <img src="./assets/web-design/web_banner3.png" alt="バナーデザイン1">
+      </div>
+      <div class="backto-projects">
+        <a href="index.html#projects" class="btnarrow4">Go back to projects</a>
+      </div>
+    </section>
+    <section id="contact">
+      <h1 class="title">Contact</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <a href="mailto:lisa.takenouchi@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+        <div class="contact-info-container">
+         <a href="https://github.com/Lisatknc" target="_blank">
+          <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <div class="contact-info-container">
+          <a href="https://www.linkedin.com/in/lisa-takenouchi/" target="_blank">
+            <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/774a66fb23.js" crossorigin="anonymous"></script>
+  </body>
+</html>
